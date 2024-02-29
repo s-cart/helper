@@ -1,0 +1,30 @@
+{
+  "name": "s-cart/helper",
+  "description": "Helper for S-Cart ecommerce",
+  "keywords": ["laravel ecommerce", "s-cart", "scart ecommerce"],
+  "homepage": "https://s-cart.org",
+  "license": "MIT",
+  "authors": [
+      {
+          "name": "Lanh Le",
+          "email": "lanhktc@gmail.com"
+      }
+  ],
+  "require": {
+      "php": "^8.1"
+  },
+  "autoload": {
+        "psr-4": {
+        "SCart\\Core\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": [
+            ],
+            "providers": [
+            "SCart\\Core\\ScartHelperServiceProvider"
+            ]
+        }
+    }
+}
